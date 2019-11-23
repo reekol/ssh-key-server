@@ -11,6 +11,11 @@ ssh-keygen -t rsa
 #!/bin/bash
 curl -sf https://github.com/$1.keys
 ```
+- Or use ssh to your own key server
+```bash
+#!/bin/bash
+ssh my-secret-server 'cat ~./.ssh/*.pub'
+```
 
 ### Configure sshd
 - add those lines to /etc/ssh/ssd_config
