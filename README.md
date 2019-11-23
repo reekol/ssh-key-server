@@ -9,12 +9,13 @@ ssh-keygen -t rsa
 ### Create file /usr/local/bin/userkey.sh and chmod a+x
 ```bash
 #!/bin/bash
+# The user is stored in $1
 curl -sf https://github.com/$1.keys
 ```
 - Or use ssh to your own key server
 ```bash
 #!/bin/bash
-ssh my-secret-server 'cat ~./.ssh/*.pub'
+ssh my-secret-server "cat /home/$1/.ssh/*.pub"
 ```
 
 ### Configure sshd
