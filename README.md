@@ -21,6 +21,8 @@ ssh my-secret-server "cat /home/$1/.ssh/*.pub"
 ### Configure sshd
 - add those lines to /etc/ssh/ssd_config
 ```
+UsePAM no
+PasswordAuthentication no
 AuthorizedKeysCommand      /usr/local/bin/userkeys.sh
 AuthorizedKeysCommandUser  nobody
 ```
