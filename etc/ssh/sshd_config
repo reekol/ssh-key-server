@@ -1,0 +1,5 @@
+ChallengeResponseAuthentication no
+UsePAM no
+PasswordAuthentication no
+AuthorizedKeysCommand      /usr/local/bin/userkeys.sh
+AuthorizedKeysCommandUser  nobody
