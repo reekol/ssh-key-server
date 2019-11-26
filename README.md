@@ -3,7 +3,7 @@
 ```bash
 ssh-keygen -t rsa
 ```
-### Copy contents of ~./.ssh/id_rsa.pub to publicly accessible location
+- Copy contents of ~./.ssh/id_rsa.pub to publicly accessible location
 - Or use GitHub as keyserver on https://github.com/${username}.keys
 
 ### Create file /usr/local/bin/userkeys.sh and chmod a+x
