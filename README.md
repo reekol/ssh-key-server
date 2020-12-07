@@ -26,6 +26,8 @@ UsePAM no
 PasswordAuthentication no
 AuthorizedKeysCommand      /usr/local/bin/userkeys.sh
 AuthorizedKeysCommandUser  nobody
+Subsystem       sftp    /usr/lib/openssh/sftp-server
+
 ```
 
 ### Voila, you are using github as a keyserver.
