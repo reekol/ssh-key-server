@@ -19,7 +19,7 @@ ssh my-secret-server "cat /home/$1/.ssh/*.pub"
 ```
 
 ### Configure sshd
-- add those lines to /etc/ssh/ssd_config
+- add those lines to /etc/ssh/sshd_config
 ```
 ChallengeResponseAuthentication no
 UsePAM no
